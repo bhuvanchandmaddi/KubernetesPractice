@@ -8,6 +8,6 @@ spec:
   issuerRef:
     name: letsencrypt-production
     kind: ClusterIssuer
-  commonName: testing.ot-xecm.com
+  commonName: test.bhuvandevops.xyz
   dnsNames:
-  - testing.ot-xecm.com
+  - test.bhuvandevops.xyz

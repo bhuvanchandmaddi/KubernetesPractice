@@ -36,15 +36,8 @@ metadata:
   name: rancher-demo
 spec:
   ingressClassName: nginx
-  # Un-comment this, if you have succesfully issued your certificate
-  #tls:
-  #- hosts:
-  #    - <YOUR_IP>.nip.io
-  # Change the secret name to ssl-cert-production 
-  # for a valid, green certificate in your browser
-  #  secretName: ssl-cert-staging
   rules:
-  - host: testing.ot-xecm.com
+  - host: test.bhuvandevops.xyz
     http:
       paths:
       - path: /

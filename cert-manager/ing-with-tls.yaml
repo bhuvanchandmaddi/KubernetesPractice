@@ -6,10 +6,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-      - testing.ot-xecm.com
+      - test.bhuvandevops.xyz
     secretName: ssl-cert-production
   rules:
-  - host: testing.ot-xecm.com
+  - host: test.bhuvandevops.xyz
     http:
       paths:
       - path: /
