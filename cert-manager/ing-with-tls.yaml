@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: rancher-demo
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+      - testing.ot-xecm.com
+    secretName: ssl-cert-production
+  rules:
+  - host: testing.ot-xecm.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service: 
+            name: rancher-demo
+            port:
+              number: 80

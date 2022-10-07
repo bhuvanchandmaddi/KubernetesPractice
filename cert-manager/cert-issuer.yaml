@@ -1,0 +1,16 @@
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-production
+  namespace: bmaddi
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: bhuvanchand.maddi333@gmail.com
+    privateKeySecretRef:
+      name: letsencrypt-production
+    solvers:
+    - selector: {}
+      http01:
+        ingress:
+          class: nginx
